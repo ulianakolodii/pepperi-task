@@ -11,34 +11,30 @@
 </head>
 
 <body>
-  <main>
-    <div class="table__container">
-      <h1 class="main__title">Test</h1>
-      <form class="input__container" id="input__form">
-        <div class="left">
-          <label class="field__title" for="main__input">Name/Value pair</label>
-          <input id="main__input"></input>
-        </div>
-        <div class="right">
-          <button id="add__button" type="submit">Add</button>
-        </div>
-      </form>
-      <div class="output__container">
-        <p class="field__title">Name/Value pair list</p>
-        <div class="output__subcontainer">
-          <select multiple id="list__table">
-            <option value="0"></option>
-          </select>
-          <div class="output-buttons__field">
-            <button>Sort by name</button>
-            <button>Sort by value</button>
-            <button class="delete__button button"  type="submit">Delete</button>
-            <button>Show XML</button>
-          </div>
+  <div class="container">
+    <h1>Test</h1>
+    <form id="input__form">
+      <div class="left">
+        <label class="field__title" for="main__input">Name/Value pair</label>
+        <input id="main__input" autofocus></input>
+      </div>
+      <div class="right">
+        <button id="add__button" type="submit">Add</button>
+      </div>
+    </form>
+    <div class="output__container">
+      <label class="field__title" for="list__table">Name/Value pair list</label>
+      <div class="output__subcontainer">
+        <select multiple id="list__table"></select>
+        <div class="output-buttons__field">
+          <button id="sort-by-name__button">Sort by name</button>
+          <button id="sort-by-value__button">Sort by value</button>
+          <button id="delete__button" type="submit">Delete</button>
+          <button id="xml__button">Show XML</button>
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </body>
 <script src="index.js"></script>
 </html>
